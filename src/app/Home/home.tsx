@@ -1,11 +1,13 @@
 import { View, Text, } from "react-native";
-import { Title } from "@/components/Header/title"
+import { Header } from "@/components/Header/header"
 
 
 export function Home() {
     return (
         <View>
-            <Title />
+            <Header title="Orçamentos" subTitle="teste"  isActive =  {false} />
+            
         </View>
+
     )
 }
