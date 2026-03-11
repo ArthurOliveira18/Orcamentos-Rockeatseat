@@ -6,10 +6,10 @@ export const styles = StyleSheet.create({
         marginLeft: 15,
         fontSize: 20,
         color:"#7d35b9",
-        marginBottom:5
+        marginBottom:5,
     },
     subTitle:{
-        marginLeft:15,
+        marginLeft:30,
         color:"#0000008b"
     },
 
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems:"flex-end",
-        height:90,
+        height:100,
        
     }
 })

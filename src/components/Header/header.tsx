@@ -1,7 +1,7 @@
 import { Text, TextProps } from "react-native";
 import { styles } from "@/components/Header/style"
 
-import {NewBudgetButton} from "@/components/NewBudgetButton/newBudgetButton"
+import { Button } from "@/components/Button/Button"
 import { View } from "react-native";
 
 type Props = TextProps & {
@@ -22,10 +22,10 @@ export function Header({ title, subTitle, isActive, ...rest }: Props) {
                     {subTitle}
                 </Text>
 
-                
+
             )}
 
-            <NewBudgetButton/>
+            <Button/>
         </View>
     )
 }

@@ -1,10 +1,11 @@
 import { StyleSheet } from "react-native";
-import { NewBudgetButton } from "./newBudgetButton";
+
 
 export const styles = StyleSheet.create({
 
     viewButton:{
-        marginLeft: 15
+        marginLeft: 35,
+        marginTop:15
     },
 
     NewBudget:{
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
         borderRadius: 40,
         flexDirection: "row",
         marginRight:15,
-        marginBottom:5
+        marginBottom:5,
     },
 
     titleButton:{
