@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     },
 
     NewBudget:{
-        backgroundColor:"#7d35b9",
+        backgroundColor:"#6A46EB",
         width:100,
         justifyContent: "center",
         alignItems: "center",

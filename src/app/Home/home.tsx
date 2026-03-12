@@ -1,21 +1,14 @@
-import { View, Text,StyleSheet } from "react-native";
+import { View, Text} from "react-native";
 import { Header } from "@/components/Header/header"
 
 
 export function Home() {
     return (
-        <View style = { styles.container}>
-            <Header title="Orçamentos" subTitle="teste"  isActive =  {false} />
+        <View >
+            <Header title="Orçamentos" subTitle="teste"  isActive =  {false}  showBotton = {true} showBackButton={false} isNotHome = {false} />
             
         </View>
 
     )
 }
 
-// Criamos o estilo da Home aqui embaixo
-const styles = StyleSheet.create({
-    container: {
-      
-       
-    }
-});

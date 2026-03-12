@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         marginTop:45,
         marginLeft: 15,
         fontSize: 20,
-        color:"#7d35b9",
+        color:"#6A46EB",
         marginBottom:5,
     },
     subTitle:{
@@ -19,5 +19,17 @@ export const styles = StyleSheet.create({
         alignItems:"flex-end",
         height:100,
        
+    },
+
+    viewBudget:{
+        flexDirection: "row",
+        alignItems:"center",
+        gap: 15,
+        marginLeft: 15
+    },
+
+    titleBudget:{
+        color: "#000",
+        fontSize: 20
     }
 })
