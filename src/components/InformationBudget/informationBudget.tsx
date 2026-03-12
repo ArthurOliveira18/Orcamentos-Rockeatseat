@@ -12,7 +12,9 @@ export function InformationBudget() {
                 <MaterialIcons name="storefront" size={15} style={{ color: "#6A46EB" }} />
                 <Text style={styles.textInfo}> Informações gerais</Text>
             </View>
+            
             <View style={styles.divider} />
+
             <View style={styles.viewInput}>
                 <TextInput style={styles.textInput} placeholder="Titulo do orçamento" />
                 <TextInput style={styles.textInput} placeholder="Cliente" />

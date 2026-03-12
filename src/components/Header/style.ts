@@ -1,35 +1,43 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    title:{
-        marginTop:45,
-        marginLeft: 15,
-        fontSize: 20,
-        color:"#6A46EB",
-        marginBottom:5,
-    },
-    subTitle:{
-        marginLeft:30,
-        color:"#0000008b"
+  
+    viewHeader: {
+        // Sem flexDirection row aqui! Queremos empilhar a linha embaixo do conteúdo
+        height: 110, // Aumentei um pouco para caber a linha
+        justifyContent: "flex-end",
+        backgroundColor: '#FFF' // Geralmente o header é branco
     },
 
-    viewHeader:{
-        flexDirection: "row",
+    headerContent: {
+        flexDirection: "row", // Só o conteúdo (Título e Botão) fica lado a lado
         justifyContent: "space-between",
-        alignItems:"flex-end",
-        height:100,
-       
+        alignItems: "center",
+        paddingHorizontal: 15,
+        paddingBottom: 10, // Espaço entre o texto e a linha
     },
 
-    viewBudget:{
+    viewBudget: {
         flexDirection: "row",
-        alignItems:"center",
-        gap: 15,
-        marginLeft: 15
+        alignItems: "center",
+        gap: 10,
     },
 
-    titleBudget:{
+    title: {
+        marginTop: 0, // Limpamos as margens para o flex alinhar
+        fontSize: 20,
+        color: "#6A46EB",
+        fontWeight: 'bold'
+    },
+
+    titleBudget: {
         color: "#000",
         fontSize: 20
-    }
+    },
+    
+    divider: {
+        height: 1,
+        backgroundColor: "#eaeaea",
+        width: "100%", 
+    },
 })

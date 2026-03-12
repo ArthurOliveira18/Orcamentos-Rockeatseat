@@ -23,47 +23,30 @@ export function Header({ title, subTitle, isActive, showBotton, showBackButton, 
     const navigation = useNavigation()
 
     return (
+      // 1. O container agora é uma coluna por padrão
         <View style={styles.viewHeader}>
+            
+            {/* 2. Criamos uma View para agrupar o que fica lado a lado */}
+            <View style={styles.headerContent}>
+                <View style={styles.viewBudget}>
+                    {showBackButton && (
+                        <TouchableOpacity onPress={() => navigation.goBack()}>
+                            {/* Dica: use 'chevron-left' do Feather para a seta fina */}
+                            <MaterialIcons name="arrow-back-ios" size={24} color="#000" />
+                        </TouchableOpacity>
+                    )}
 
-            <View style={styles.viewBudget}>
-                {showBackButton && (
-                    <TouchableOpacity onPress={() => navigation.goBack()}>
-                        <MaterialIcons name="arrow-back-ios" size={24} />
-                    </TouchableOpacity>
-                )}
+                    <Text style={[styles.title, isNotHome && styles.titleBudget]}>
+                        {title}
+                    </Text>
+                </View>
 
-                
-                <Text 
-                style = 
-                {[styles.titleBudget, 
-                    //  Aqui estou fazendo uma verificação junto ao estilo, se for true o isNotHome, então vai mostrar o estilo da página budget 
-                    isNotHome ? styles.titleBudget : styles.title
-                ]}>  
-
-                {title}
-                   
-                </Text>
-
+                {showBotton && <Button />}
             </View>
 
-
-
-            {isActive && (
-                <Text style={styles.subTitle}>
-                    {subTitle}
-
-                </Text>
-
-
-            )}
-
-            {showBotton && (
-                <Button />
-            )}
-
-
-
-
+            {/* 3. A linha agora fica embaixo de tudo com 100% de largura */}
+            <View style={styles.divider} />
+            
         </View>
     )
 }
